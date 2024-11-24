@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自我介绍</title>
+  <style>
+    /* 全局样式 */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa; /* 柔和的背景色 */
+      margin: 0;
+      padding: 0;
+      color: #333; /* 正文文字颜色 */
+    }
+
+    /* 头部样式 */
+    header {
+      background-color: #007bff; /* 亮眼的蓝色头部背景 */
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 增加阴影效果 */
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px; /* 加大标题字号 */
+      letter-spacing: 2px; /* 增加字母间距，更显精致 */
+    }
+
+    /* 各板块通用样式 */
+    section {
+      padding: 30px;
+      margin: 30px;
+      background-color: white;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* 柔和阴影让板块更立体 */
+      border-radius: 10px; /* 板块圆角 */
+      transition: transform 0.3s ease; /* 添加鼠标悬停时的缩放动画过渡效果 */
+    }
+
+    section:hover {
+      transform: scale(1.02); /* 鼠标悬停时板块放大一点 */
+    }
+
+    img {
+      max-width: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      border: 3px solid #007bff; /* 给照片加边框 */
+    }
+
+    h2 {
+      color: #007bff; /* 标题统一用蓝色，和头部呼应 */
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    /* 底部样式 */
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px; /* 和上面内容拉开距离 */
+    }
+
+    /* 链接样式（如果添加链接的话） */
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease; /* 链接颜色变化过渡效果 */
+    }
+
+    a:hover {
+      color: #0056b3; /* 鼠标悬停时链接颜色变深 */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>闵国东</h1>
+  </header>
+  <button id="backButton"><a href="C:\Users\mingu\Desktop\网页制作\HTML+CSS\第一页.html">返回上一页</a></button>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          var backButton = document.getElementById('backButton');
+          backButton.addEventListener('click', function () {
+              window.history.back();
+          });
+      });
+  </script>
+  <section>
+    
+    <h2>个人简介</h2>
+    <p>
+        我性格开朗且沉稳内敛，动静相宜。
+        在个人爱好方面，我钟情于弹吉他，指尖在琴弦上的灵动跳跃，总能让我沉浸于音乐的美妙世界。
+     阅读也是我生活中不可或缺的部分，在书海里遨游，我不断汲取知识、开阔视野；而旅游则让我有机会领略各地风土人情，丰富人生阅历，感受世界的多元与精彩。
+        学习上，我曾荣获市级三好学生，这激励着我在学业道路上不断进取。
+        我也积极投身社会实践，曾担任法治宣传员，这段经历不仅锻炼了我的沟通表达能力，更让我深刻体会到法律知识普及的重要性，也增强了我为社会服务的责任感。
+        我相信这些经历都塑造了如今的我，让我有足够的信心与能力去迎接未来的挑战与机遇，努力为个人成长和社会发展贡献力量。
+        作为华中大计算机人，我会不断学习和探索计算机领域的相关知识，积极参加竞赛和科研，以T.I.M.E 文化为引领，守正创新，和时代同频共振。 
+    </p>
+  </section>
+  <section>
+    <h2>最喜欢的歌手</h2>
+    <p>我最喜欢的女歌手是 <a href="C:\Users\mingu\Desktop\网页制作\HTML+CSS\favorite singer.html">邓紫棋</a>，她实在是一位令人赞叹不已的全能型音乐人。她的音乐才华堪称卓越，作为创作型歌手，她的歌曲创作能力极强，像《光年之外》《泡沫》等经典作品，旋律动人且歌词富有诗意和深度，每一首都像是在讲述一个动人的故事，能够深深触动人们的心灵.
+        她的唱功更是令人折服，拥有“小巨肺”之称的她，音域宽广，高音嘹亮且极具穿透力，低音沉稳有力，各种高难度的演唱技巧都能轻松驾驭，在舞台上一开嗓便能震撼全场，其独特的唱腔更是辨识度极高，让人过耳难忘.
+        邓紫棋在舞台上的表演也魅力十足，她的台风稳健，舞台表现力极强，每一个动作、每一个眼神都充满了感染力，能够将歌曲中的情感淋漓尽致地展现出来，让观众沉浸在她的音乐世界中，仿佛整个舞台都在她的掌控之中.
+        除了音乐才华，她的颜值和气质也非常出众，她的美清新脱俗、超凡入圣，五官精致且搭配和谐，尤其是那双眼睛，仿佛能洞察人心，又充满了无尽的温柔与深情.
+        而她的性格也十分圈粉，她真诚善良、自信可爱，对待工作认真负责，对待粉丝热情友好，从不会摆明星架子，还经常用自己的经历和感悟鼓励粉丝，给粉丝带来正能量，让粉丝感受到她的温暖和力量.
+    </p>
+  </section>
+  <section>
+    <h2>最喜欢的电影</h2>
+    <div> <strong>《肖申克的救赎》:希望与自由的不朽赞歌</strong></div>
+    <p>《肖申克的救赎》宛如一座巍峨的电影丰碑，在岁月的长河中始终闪耀着璀璨光芒。
+        影片的叙事节奏沉稳而富有张力。从安迪蒙冤入狱的绝望开篇，到他在狱中逐步建立起希望的微妙转变，每一个情节推进都如同一记重锤，敲击着观众的心灵。安迪为狱友争取啤酒福利的片段，那短暂的自由欢畅与漫长的牢狱禁锢形成鲜明对比，让人深刻感受到希望的珍贵与强大。而他耗时多年挖通地道的过程，虽未大肆渲染，却在悄无声息中展现出坚韧不拔的毅力，让观众不禁为他的命运揪心。
+        在角色塑造上，安迪和瑞德的形象鲜活而立体。安迪，这位银行家出身的囚犯，始终保持着清醒的头脑和不屈的灵魂。他用智慧在监狱中谋得生存空间，更用希望点燃了周围人心中的火焰。瑞德则是监狱生活的见证者与讲述者，他的世故与安迪的执着相互映衬，他们之间的友情在困境中生根发芽，成为影片中一抹温暖的亮色。
+        主题挖掘方面，影片对希望与自由的探讨深刻而动人。它告诉我们，即使身处绝境如肖申克监狱这般的 “深渊”，希望也永不磨灭。安迪在监狱图书馆中播放《费加罗的婚礼》的场景，那悠扬的音乐冲破监狱的高墙，是对自由最有力的呐喊。它让我们明白，体制化虽可束缚人的身体，却无法禁锢向往自由的心灵。
+        《肖申克的救赎》不仅仅是一部电影，更是一种精神的寄托与象征。它让我们在面对生活的困境时，坚定地怀揣希望，勇敢地追寻自由，永不向命运低头。这部电影将永远在电影史上占据着举足轻重的地位，持续地为一代又一代观众带来心灵的慰藉与鼓舞。
+        </p>
+  </section>
+  <footer>
+   <div>Contact me</div>
+   <div>电话 ：18307282623</div>
+   <div>邮箱 ：3467283675@qq.com</div>
+   </footer>
+</body>
+
+</html>

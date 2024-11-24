@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="English">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文字框弹起效果（阴影模拟）</title>
+    <style>
+        /* 全局样式设置 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 文字框样式 */
+       .text-box {
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 200px;
+            margin: 50px auto;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* 鼠标悬停时文字框样式 */
+       .text-box:hover {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-box">这是会弹起的文字</div>
+</body>
+
+</html>
