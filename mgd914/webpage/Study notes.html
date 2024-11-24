@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习心得</title>
+    <style>        
+        section{
+            margin: auto;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        #modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.1s ease-in-out;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 500px;
+            max-height: 80%;
+            overflow: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .bgi{
+            background-image: linear-gradient(to bottom ,#0fcabb,#b727db,#64f4a2);
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="bgi">
+    <header>
+        <h1 style="text-align: center; margin-top: 20px;">学习心得</h1>
+        <br>
+    </header>
+    <button id="backButton"><a href="C:\Users\mingu\Desktop\网页制作\HTML+CSS\第一页.html">返回上一页</a></button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var backButton = document.getElementById('backButton');
+            backButton.addEventListener('click', function () {
+                window.history.back();
+            });
+        });
+    </script>
+    
+
+    <div class="container">
+        <!-- 左侧栏 -->
+        <div class="sidebar">
+            <h2>学习心得</h2>
+            <ul>
+                <li>C语言学习笔记</li>
+                <li>网页制作心得</li>
+            </ul>
+        </div>
+        <div class="main">
+            <section>
+            <h2>C语言学习笔记</h2>
+            在<a href="https://elegant-pulsar-e83.notion.site/Try-something-in-C-11f37c57fc4b803d8d0bffa5cb8513da">notion</a>上查看我的学习心得。
+            </section>
+            <br>
+            <section>
+            <h2>网页制作心得</h2>
+            <p>学习网页设计是一段充满挑战和乐趣的旅程。在这个过程中，我深刻体会到，敢于想象、勇于尝试是提升技能和完善作品的关键。</p>
+
+            <h3>灵感是设计的起点</h3>
+            <p>每一个网页设计的开始，都是从一个新想法萌芽的。我常常问自己：“页面的背景怎样设置为渐变的呢”“页面是否可以像书页一样翻动？”这些大胆的设想成了我探索网页设计的动力。哪怕刚开始不知道如何实现，我也不会束缚自己的想象力。</p>
+
+            <h3>从无到有的创造过程</h3>
+            <p>有了想法之后，我立刻着手尝试。或许刚开始写出的代码很粗糙，页面也可能不尽如人意，但每一次尝试都会带来新的收获。当渐变的背景在屏幕上成功显示，或者一个交互动画顺利运转，那种成就感让我更有动力去挑战新的目标。</p>
+
+            <h3>逐步完善：从尝试到精致</h3>
+            <p>网页设计是一个持续优化的过程。我在每一次尝试中发现问题，再不断调整。比如，一个动态效果可能开始时看起来生硬，但通过修改参数或添加过渡效果，就能变得更加流畅。正是通过这样一次次的小改进，我的网页从简单到复杂，从粗糙到精美，一点点趋于完善。</p>
+
+            <h3>AI的助力：成为我的设计伙伴</h3>
+            <p>在整个过程中，AI扮演了重要的角色。每当我遇到困难，AI总能及时给予帮助，从基础代码到解决复杂逻辑问题，它的指导让我少走了很多弯路。不仅如此，AI还启发了我很多新的思路，比如如何用CSS实现微妙的渐变效果，或者用JavaScript添加交互功能。这种陪伴式的支持，让我对设计的热情持续高涨。</p>
+            <a href="https://chat.openai.com">ChatGPT</a>
+            <a href="https://kimi.moonshot.cn">Kimi</a>
+            <a href="https://copilot.microsoft.com/">Copilot</a>
+            <a href="https://www.doubao.com">Dou bao</a><br>
+
+            <h3>结语</h3>
+            <p>通过敢想敢试，我的网页从最初的简单布局，逐步成长为一个充满个性和功能的作品。这段经历让我明白，设计的魅力在于不断尝试、不断进步，而AI的陪伴则为这段旅程增添了更多可能性。未来，我期待用这种探索精神和AI的支持，创造更多精彩的网页。</p>
+            
+            </section>
+            <br>
+            <script src=""
+                data-repo="Mirpri/my-intro"
+                data-repo-id="R_kgDONSNZcw"
+                data-category="General"
+                data-category-id="DIC_kwDONSNZc84CkceT"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="light"
+                data-lang="zh-CN"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </div>
+        
+    </div>
+    <br>
+
+   </div>
+</body>
+
+<script>
+    const showModalButton = document.getElementById('show-modal');
+    const modal = document.getElementById('modal');
+    const closeButton = document.querySelector('.close');
+
+    showModalButton.addEventListener('click', () => {
+        modal.style.display = 'flex';
+    });
+
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+</html>

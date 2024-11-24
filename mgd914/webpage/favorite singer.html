@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Singer</title>
+</head>
+<head>
+    <head>
+        <style>
+            /* 定义动画名称为changeColor，持续时间为10s，无限循环，线性过渡 */
+            @keyframes changeColor {
+                0% {
+                    background-color: rgb(229, 129, 212);
+                }
+                33% {
+                    background-color: rgb(194, 32, 230);
+                }
+                66% {
+                    background-color: rgb(141, 18, 217);
+                }
+                100% {
+                    background-color: rgb(159, 48, 233);
+                }
+            }
+            body {
+                /* 将动画应用到body元素，动画播放时间为10秒，无限循环，线性过渡 */
+                animation: changeColor 8s infinite ease-in-out;
+            }
+        .container {
+        position: relative;
+        }
+        .picture1 {
+          position: absolute;
+          top: 30%;
+          right: 0%;
+        }
+        .picture2 {
+          position: absolute;
+          top: 71%;
+          right: 0%;
+        }
+        .picture3 {
+          position: absolute;
+          top: 71%;
+          right: 18%;
+        }
+        .dzq {
+          position: absolute;
+          top: 2%;
+          left: 40%;
+          font-size: 100px;
+          color: rgb(157, 65, 242);
+        }
+        .pc1 {
+          position: absolute;
+          top: 0%;
+          left: 0%;
+        }
+        .pc2 {
+          position: absolute;
+          top: 100%;
+          left: 50% ;
+        }
+        .pc3 {
+          position: absolute;
+          top: 125%;
+          left: 16% ;
+        }
+        .pc4 {
+          position: absolute;
+          top: 125%;
+          left: 57% ;
+        }
+        .pc5 {
+          position: absolute;
+          top: 97%;
+          left: 25% ;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+              width: 200px;
+              height: 400px;
+             
+              margin-top: 42px;
+              margin-left: 30px;
+              padding-left: 30px;
+              font-size: 40px;
+        }
+        .box-content{
+            width: 1000px;
+            height: 300px;
+            font-size: 18px;
+        }
+        .motian{
+            position: absolute;
+            top: 97%;
+            left: 25%;
+        }
+        .jiejie{
+            position: absolute;
+            top: 99%;
+            left: 50%;
+        }
+        .haokan{
+            position: absolute;
+            top: 99%;
+            right: 0%;
+        }
+       .location{
+            position: absolute;
+            top: 71%;
+            left: 0%;
+            font-size: 20px;
+       }
+       .location:hover {
+            box-shadow: 0px 5px 10px rgb(17, 234, 194);
+        }
+
+        </style>
+    </head>
+</head>
+<body>
+   
+    <div class="container">
+        <button id="backButton" class="location"><a href="C:\Users\mingu\Desktop\网页制作\HTML+CSS\第一页.html">返回上一页</a></button>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var backButton = document.getElementById('backButton');
+                backButton.addEventListener('click', function () {
+                    window.history.back();
+                });
+            });
+        </script>
+        <img src="..\images\GEM.png" width="350px" class="picture1">
+        <img src="..\images\img.jpg" width="300px" class="picture2">
+        <img src="..\images\GEM2.png" width="300px" class="picture3">
+        <img src="..\images\G E M.png" width="1650px">
+        <img src="..\images\Gem .png" width="640px" height="250px" class="pc1">
+
+        <img src="..\images\好看.png"  height="400px"  class="haokan">
+        <img src="..\images\邓.png" width="440px" class="pc5">
+        <img src="..\images\解解.png"" width="560px"  class="pc2">
+        <img src="..\images\Gem .png" width="700px" height="190px" class="pc3">
+        <img src="..\images\Gem .png" width="700px" height="190px" class="pc4">
+
+        
+       
+        <div class="box"> 
+            <ul >
+                <li> <a href="https://baike.baidu.com/item/%e9%82%93%e7%b4%ab%e6%a3%8b/6798196#1">基本信息</a></li>
+                 <div class="box-content">邓紫棋（G.E.M.），本名邓诗颖，1991年8月16日出生于上海市，
+                    华语流行乐女歌手、词曲作者、音乐制作人。 2008年，发行个人首张EP《G.E.M.》 [23]。
+                    2009年，发行音乐专辑《18》 [256]。2011年，成为首位登上香港红馆开唱的90后女歌手 [2]。
+                    2013年，凭借专辑《Xposed》提名第24届台湾金曲奖“最佳国语女歌手奖” [4]，
+                    并获得IFPI香港唱片销量大奖“全年最高销量女歌手奖” [3]。2014年，参加音乐节目《我是歌手第二季》并获得总决赛亚军 [5]
+                    ；同年，获得第27届美国儿童选择奖“最受欢迎亚洲艺人奖” [6]。2015年，登上央视春晚弹唱歌曲《多远都要在一起》 [7]；
+                    同年，全亚洲发行音乐专辑《新的心跳》 [46]，并在瑞士少女峰举行公演 [45]。
+                    2016年，入选福布斯《全球30岁以下最具潜力音乐人》榜单 [9]；
+                    同年，获得MTV欧洲音乐奖“最佳中国艺人奖” [10]。 2017年，入选StubHub平台“全球十大巡演票房畅销女歌手” [63]。
+                    2018年，担任第7届科学突破奖颁奖典礼的颁奖和表演嘉宾 [11]；同年，被英国广播公司评选为“全球最具影响力百大女性” [12]。
+                    2020年，凭借专辑《摩天动物园》获得第31届台湾金曲奖“评审团奖” [14]；同年，成为流媒体平台Spotify“全球最受欢迎华语女歌手” [341]，
+                    并获得Mnet亚洲音乐大奖“最佳亚洲艺人奖” [15]。2021年，其歌曲《光年之外》的MV被吉尼斯世界纪录认证为“YouTube上观看次数最多的中文音乐视频” [368]。
+                    2022年，发行音乐专辑《启示录》 [526]。2023年，其YouTube频道累计观看次数突破20亿次 [413]；
+                    同年，举行邓紫棋"I AM GLORIA"世界巡回演唱会 [507]。</div>
+                <li> <a href="https://baike.baidu.com/item/%e9%82%93%e7%b4%ab%e6%a3%8b/6798196#2">演艺经历</a></li>
+                <li> <a href="https://baike.baidu.com/item/%e9%82%93%e7%b4%ab%e6%a3%8b/6798196#3">个人生活</a></li>
+                <li> <a href="https://baike.baidu.com/item/%e9%82%93%e7%b4%ab%e6%a3%8b/6798196#4">主要作品</a></li>
+                <div class="box-content">
+                    <li>专辑 T.I.M.E 发行时间 2023-11-26</li>
+                    <li>专辑 Revelacion 发行时间 2023-7-10</li>
+                    <li>专辑 启示录 发行时间 2022-9-23</li>
+                    <li>专辑 摩天动物园 发行时间 2019-12-27</li>
+                    <li>专辑 睡皇后 发行时间 2018-12-14</li>
+                    <li>专辑 毒苹果 发行时间 2018-10-26</li>
+                    <li>专辑 另一个童话 发行时间 2018-8-16</li>
+                    <li>专辑 Looks 发行时间 2016-9-30</li>
+                    <li>专辑 新的心跳 发行时间 2015-11-6</li>
+                    <li>专辑 G.E.M.X.X.X.LIVE 发行时间 2013-11-6</li>
+                    <li>专辑 My secret 发行时间 2010-10-29</li>
+                    <li>专辑 G.E.M. 发行时间 2008-10-16</li>
+                </div>
+                <li> <a href="https://baike.baidu.com/item/%e9%82%93%e7%b4%ab%e6%a3%8b/6798196#5">社会活动</a></li>
+                <li> <a href="https://baike.baidu.com/item/%e9%82%93%e7%b4%ab%e6%a3%8b/6798196#6">获奖记录</a></li>
+                <li> <a href="https://baike.baidu.com/item/%e9%82%93%e7%b4%ab%e6%a3%8b/6798196#7">人物评价</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+   
+
+     
+        
+    
+</body>
+</html>
