@@ -7,7 +7,7 @@
 </head>
 <style>
     .container {
-        position: relative;
+        position: absolute;
     }
     .text-on-image {
         position: absolute;
@@ -86,21 +86,404 @@
        .text-box:hover {
             box-shadow: 0px 5px 10px rgb(17, 234, 194);
         }
+
+
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body1 {
+   position: absolute;
+   left: 10%;
+   top: 110%;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 190px;
+  /* height: 450px; */
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+
+  left: 15%; 
+  transform: translateX(-50%); 
+  top: 250px; /* 这里距离顶部100px，可根据需求调整具体数值 */
+}
+
+.card:hover {
+  height: 450px;
+}
+
+.imgBx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .imgBx {
+  width: 250px;
+  height: 250px;
+}
+
+.imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card .content .details {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+
+.card .content .details h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+
+.card .content .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card .content .details .data {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card .content .details .data h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.card .content .details .data h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.card .content .details .actionBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .content .details .actionBtn button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: #ff5f95;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card .content .details .actionBtn button:nth-child(2) {
+  border: 1px solid #999;
+  color: #999;
+  background: #fff;
+}
+.merit-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px; /* 初始位置在屏幕底部下方 */
+        opacity: 0; /* 初始透明度为0，隐藏起来 */
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.5s ease; /* 过渡动画效果 */
+    }
+    .message-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px;
+        /* 初始位置在屏幕底部下方 */
+        opacity: 0;
+        /* 初始透明度为0，隐藏起来 */
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+        /* 过渡动画效果 */
+    }
+    body{
+      background-image: url(..\images\luoxiaohei.png);
+      background-size: cover;
+    }
+
+
+
+    header{
+    background-color:#4cedaf;
+    height: 80px;
+}
+h1{
+    color: white;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:210px;
+    background-size: contain;
+    font-family: 'Arial black';
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+    font-family: '得意黑';
+}
+header ul{
+    position: absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+}
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.bar{
+    display: block;
+    background-color: #fff;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-bar{
+    min-height: 70px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    header {
+        display: fixed;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active.bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active.bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        background-color: #61eaea;
+        top: -100%;
+        left:0vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+    .nav-menu.active{
+    top: 70px;
+    align-items: center;
+    font-size: 20px;
+    }
+    .word{
+    position: absolute;
+    bottom: -10vh;
+    }
+    .one{
+    height: 110vh;
+    }
+}
+
+
 </style>
 
 <body>
-    <div class="container">
-        <img src="..\images\luoxiaohei.png" width="1650" height="897">
-        <div class="text-on-image">自我介绍</div>
-        <div class="name">姓名：闵国东</div>
-        <div class="profession">学院：计算机科学与技术</div>
-        <div class="classs">班级：计科创新2401</div>
-        <a href="Hobby.html" target="_self" class="hobby text-box" >Hobby</a>
-        <a href="favorite singer.html" target="_self" class="favorite text-box" >Favorite Singer</a>
-        <a href="Study notes.html" target="_self" class="studynotes text-box" >Study notes</a>
-        <a href="国漫.html" target="_self" class="guoman text-box">国漫</a>
 
+
+  <header>
+    <h1>INTRODUCTION</h1>
+    <nav class="nav-bar">
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">网站首页</a></li>
+        <li class="nav-item"><a href="Hobby.html" class="nav-link">我的爱好</a></li>
+        <li class="nav-item"><a href="favorite singer.html" class="nav-link">最喜欢的歌手</a></li>
+        <li class="nav-item"><a href="Study notes.html" class="nav-link">学习笔记</a></li>
+        <li class="nav-item"><a href="国漫.html" class="nav-link">国漫</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">返回寝室主页</a></li>
+    </ul>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </div>
-    
+    </nav>
+    </header>
+
+
+
+    <div class="container">
+        <img src="..\images\luoxiaohei.png" width="1650" height="913">
+        <div class="text-on-image">自我介绍</div>
+       
+        
+    </div>
+
+
+
+    <div class="card body1">
+        <div class="imgBx">
+          <img src="..\images\wl.jpg">
+        </div>
+        <div class="content">
+          <div class="details">
+            <h2>闵国东<br><span>计科创新2401</span><br>
+                <span>QQ : 3467283675</span><br>
+                </h2>
+            <div class="data">
+              <h3>***<br><span>posts</span></h3>
+              <h3>***<br><span>Followers</span></h3>
+              <h3>***<br><span>Following</span></h3>
+            </div>
+            <div class="actionBtn">
+                <button class="follow-btn">点我看看</button>
+                <button class="message-btn">留言</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="message-container"></div>
+<div id="merit-container"></div>
+<script>
+    const followBtn = document.querySelector('.follow-btn');
+    const messageBtn = document.querySelector('.message-btn');
+    const followContainer = document.getElementById('merit-container');
+    const messageContainer = document.getElementById('message-container');
+
+    // 处理Follow按钮点击事件
+    followBtn.addEventListener('click', () => {
+        const followText = document.createElement('p');
+        followText.textContent = '功德 +1';
+        followText.className = 'merit-text';
+        followContainer.appendChild(followText);
+
+        // 显示动画，从屏幕底部向上滑动并显示出来
+        followText.style.bottom = '50px';
+        followText.style.opacity = '1';
+
+        const followId = Date.now();
+        followText.dataset.followId = followId;
+
+        const followInfo = {
+            element: followText,
+            id: followId
+        };
+        const followInfos = window.followInfos || [];
+        followInfos.push(followInfo);
+        window.followInfos = followInfos;
+
+        setTimeout(() => {
+            // 隐藏动画，让所有已显示的“功德 +1”文字向下滑动隐藏
+            followInfos.forEach(info => {
+                const { element } = info;
+                element.style.bottom = '-50px';
+                element.style.opacity = '0';
+            });
+        }, 1000);
+    });
+
+    // 处理Message按钮点击事件
+    messageBtn.addEventListener('click', () => {
+        const messageText = document.createElement('p');
+        messageText.textContent = '逗你玩';
+        messageText.className = 'message-text';
+        messageContainer.appendChild(messageText);
+
+        // 显示动画，从屏幕底部向上滑动并显示出来
+        messageText.style.bottom = '50px';
+        messageText.style.opacity = '1';
+
+        const messageId = Date.now();
+        messageText.dataset.messageId = messageId;
+
+        const messageInfo = {
+            element: messageText,
+            id: messageId
+        };
+        const messageInfos = window.messageInfos || [];
+        messageInfos.push(messageInfo);
+        window.messageInfos = messageInfos;
+
+        setTimeout(() => {
+            // 隐藏动画，让所有已显示的“逗你玩”文字向下滑动隐藏
+            messageInfos.forEach(info => {
+                const { element } = info;
+                element.style.bottom = '-50px';
+                element.style.opacity = '0';
+            });
+        }, 1000);
+    });
+</script>
+
 </body>
 </html>

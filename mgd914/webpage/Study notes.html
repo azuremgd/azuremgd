@@ -45,16 +45,131 @@
         .bgi{
             background-image: linear-gradient(to bottom ,#0fcabb,#b727db,#64f4a2);
         }
+
+
+        header{
+    background-color:#4cedaf;
+    height: 80px;
+}
+h1{
+    color: white;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:210px;
+    background-size: contain;
+    font-family: 'Arial black';
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+    font-family: '得意黑';
+}
+header ul{
+    position: absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+}
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.bar{
+    display: block;
+    background-color: #fff;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-bar{
+    min-height: 70px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    header {
+        display: fixed;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active.bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active.bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        background-color: #61eaea;
+        top: -100%;
+        left:0vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+    .nav-menu.active{
+    top: 70px;
+    align-items: center;
+    font-size: 20px;
+    }
+    .word{
+    position: absolute;
+    bottom: -10vh;
+    }
+    .one{
+    height: 110vh;
+    }
+}
     </style>
 </head>
 <body>
+    <header>
+        <h1>INTRODUCTION</h1>
+        <nav class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">网站首页</a></li>
+            <li class="nav-item"><a href="Hobby.html" class="nav-link">我的爱好</a></li>
+            <li class="nav-item"><a href="favorite singer.html" class="nav-link">最喜欢的歌手</a></li>
+            <li class="nav-item"><a href="Study notes.html" class="nav-link">学习笔记</a></li>
+            <li class="nav-item"><a href="国漫.html" class="nav-link">国漫</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">返回寝室主页</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>
+        </header>
    
     <div class="bgi">
     <header>
         <h1 style="text-align: center; margin-top: 20px;">学习心得</h1>
         <br>
     </header>
-    <button id="backButton"><a href="C:\Users\mingu\Desktop\网页制作\HTML+CSS\第一页.html">返回上一页</a></button>
+    <button id="backButton"><a href="index.html">返回上一页</a></button>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var backButton = document.getElementById('backButton');
